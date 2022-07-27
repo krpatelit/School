@@ -18,12 +18,33 @@ class NYCSchoolTests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-        // Any test you write for XCTest can be annotated as throws and async.
-        // Mark your test throws to produce an unexpected failure when your test encounters an uncaught error.
-        // Mark your test async to allow awaiting for asynchronous code to complete. Check the results with assertions afterwards.
+    func testSchoolRequestSchoolList() {
+
+        //I would prefer to move all static urls and staic test data into some static struct
+        XCTAssertEqual(SchoolRequest.schoolList.url, "https://data.cityofnewyork.us/resource/s3k6-pzi2.json?$limit=50")
+        XCTAssertEqual(SchoolRequest.schoolList.method, "GET")
+        XCTAssertNil(SchoolRequest.schoolList.headers)
+        XCTAssertNil(SchoolRequest.schoolList.postBody)
+    }
+
+    func testSchoolRequestSchoolDetail() {
+
+        //I would prefer to move all static urls and staic test data into some static struct
+        let detailRequest = SchoolRequest.schooldDetail(dbn: "123")
+        XCTAssertEqual(detailRequest.url, "https://data.cityofnewyork.us/resource/f9bf-2cp4.json?dbn=\("123")")
+        XCTAssertEqual(detailRequest.method, "GET")
+        XCTAssertNil(detailRequest.headers)
+        XCTAssertNil(detailRequest.postBody)
+    }
+
+    func testSchoolRequestProtocolMethods() {
+
+        //I would prefer to move all static urls and staic test data into some static struct
+        let mockRequest = MockRequest.schoolList
+        XCTAssertEqual(mockRequest.url, "SchoolList")
+        XCTAssertEqual(mockRequest.method, "GET")
+        XCTAssertNil(mockRequest.headers)
+        XCTAssertNil(mockRequest.postBody)
     }
 
     func testPerformanceExample() throws {

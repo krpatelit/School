@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E54874432891D4910067D1DC /* MockSchoolViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E54874422891D4910067D1DC /* MockSchoolViewModel.swift */; };
 		E58D84A128911730004532DE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E58D84A028911730004532DE /* AppDelegate.swift */; };
 		E58D84A328911730004532DE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E58D84A228911730004532DE /* SceneDelegate.swift */; };
 		E58D84A828911730004532DE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E58D84A628911730004532DE /* Main.storyboard */; };
@@ -62,6 +63,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E54874422891D4910067D1DC /* MockSchoolViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockSchoolViewModel.swift; sourceTree = "<group>"; };
 		E58D849D28911730004532DE /* NYCSchool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NYCSchool.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E58D84A028911730004532DE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E58D84A228911730004532DE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -163,11 +165,11 @@
 		E58D84B628911732004532DE /* NYCSchoolTests */ = {
 			isa = PBXGroup;
 			children = (
+				E58D84B728911732004532DE /* NYCSchoolTests.swift */,
 				E58D850128913757004532DE /* NYCSchoolListTest.swift */,
 				E58D8506289138C9004532DE /* NYCSchoolDetailTest.swift */,
 				E58D8505289137F4004532DE /* MockClasses */,
 				E58D84FC28913507004532DE /* MockData */,
-				E58D84B728911732004532DE /* NYCSchoolTests.swift */,
 			);
 			path = NYCSchoolTests;
 			sourceTree = "<group>";
@@ -360,6 +362,7 @@
 			children = (
 				E58D8503289137E4004532DE /* MockNetworkManager.swift */,
 				E58D851028914C36004532DE /* MockRequest.swift */,
+				E54874422891D4910067D1DC /* MockSchoolViewModel.swift */,
 			);
 			path = MockClasses;
 			sourceTree = "<group>";
@@ -538,6 +541,7 @@
 			files = (
 				E58D8504289137E4004532DE /* MockNetworkManager.swift in Sources */,
 				E58D8507289138C9004532DE /* NYCSchoolDetailTest.swift in Sources */,
+				E54874432891D4910067D1DC /* MockSchoolViewModel.swift in Sources */,
 				E58D850228913757004532DE /* NYCSchoolListTest.swift in Sources */,
 				E58D851128914C36004532DE /* MockRequest.swift in Sources */,
 				E58D84B828911732004532DE /* NYCSchoolTests.swift in Sources */,

@@ -6,3 +6,15 @@
 //
 
 import Foundation
+import XCTest
+@testable import NYCSchool
+
+struct MockSchoolViewModel: SchoolViewProtocol {
+
+    var dbn: String? = "12345"
+    var schoolName: String? = "NYC School"
+    var location: String? = "Long Island beach"
+    var city: String? = "NYC"
+    var zip: String? = "98001"
+
+}
