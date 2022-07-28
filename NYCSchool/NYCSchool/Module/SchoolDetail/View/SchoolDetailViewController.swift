@@ -39,8 +39,6 @@ class SchoolDetailViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        //Given more time, I would prefer this statis words keep on localized string
-        self.title = "School"
 
         topStackView.layer.borderColor = UIColor.lightGray.cgColor
 
@@ -87,6 +85,8 @@ class SchoolDetailViewController: UIViewController {
     }
 
     //Stop & Hide ActivityIndicator
+    //If time permit, better we handle by UILable componenet or
+    //one progress bar for all request
     private func stopUIActivityIndicator() {
         self.actIndTestTaker.stopAnimating()
         self.actIndReading.stopAnimating()

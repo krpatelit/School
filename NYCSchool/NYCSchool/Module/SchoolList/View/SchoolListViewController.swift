@@ -26,7 +26,6 @@ class SchoolListViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.title = "NYC Schools"
 
         self.tblView.register(SchoolTableViewCell.nib,
                               forCellReuseIdentifier: SchoolTableViewCell.reuseIdentifier)
