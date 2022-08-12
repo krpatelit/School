@@ -10,6 +10,7 @@ NYS School List
 
 <br/>
 <br/>
-School Detail
-![School Detail](https://user-images.githubusercontent.com/28160153/184424207-419a85ed-97ce-4eff-b447-4b7dbd6f06ce.png)
+<br/>
 
+
+![School Detail](https://user-images.githubusercontent.com/28160153/184424620-ed9b378f-49a2-4544-8342-c62e1a604351.png)
